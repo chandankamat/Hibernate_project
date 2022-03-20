@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/myhiber</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">kumar123</property>
+		<property name="hibernate.connection.pool_size">10</property>
+		<property name="hibernate.current_session_context_class">thread</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+		<property name="hbm2ddl.auto">update</property>
+
+		<mapping class="com.jspiders.project.Student" />
+		<mapping class="com.jspiders.project.Address" />
+		<mapping class="com.jspiders.pkg1.Certificate"/>
+		<mapping class="com.jspiders.map.Question"/>
+		<mapping class="com.jspiders.map.Answer"/>
+		<mapping class="com.jspiders.map1.Emp"/>
+		<mapping class="com.jspiders.map1.Project"/>
+		
+		
+
+
+
+	</session-factory>
+</hibernate-configuration>
